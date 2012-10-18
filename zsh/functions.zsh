@@ -8,6 +8,7 @@ function server() {
 }
 
 # mcd: (m)ake a directory and (cd) into it
+# http://www.commandlinefu.com/commands/view/8243/create-a-directory-and-cd-into-it
 function mcd() {
-  mkdir $1 && cd $1
+  mkdir -p "$@" && cd "$_"
 }

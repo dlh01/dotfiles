@@ -1,11 +1,12 @@
 ## SHORTCUTS
-alias ....='../../..'
-alias .....='../../../..'
-alias ......='../../../../..'
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
 alias c='cd'
 alias cdb='cd -'
 alias df='df -h'
-alias dk='cd ~/Desktop'
+alias -g dk='~/Desktop'
 alias dl='cd ~/Downloads'
 alias dr='cd ~/Dropbox'
 alias du='du -h -d 2'
@@ -90,6 +91,6 @@ alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
 alias sse='. ~/.secrets' # (s)ource (se)crets
 alias sza='. ~/dotfiles/zsh/aliases.zsh' # (s)ource (z)shrc (a)liases
 alias trel='tree | less'
-alias unziphere='unzip -d ./'
+alias uzh='unzip -d ./' # unzip to current directory -- (u)n(z)ip (h)ere
 alias yav='yadr vim-add-plugin -u'
 alias yuv='yadr vim-update-plugins'
