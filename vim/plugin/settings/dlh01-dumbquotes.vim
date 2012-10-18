@@ -16,6 +16,7 @@ function! DumbQuotes()
     :%s/â€"/---
     :%s/…/...
     :%s/â€¦/...
+    :%s/•/\*
 endfunction
 
 

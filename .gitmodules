@@ -49,3 +49,12 @@
 [submodule "vim/bundle/honza-snipmate-snippets"]
 	path = vim/bundle/honza-snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
+[submodule "vim/bundle/danro-rename"]
+	path = vim/bundle/danro-rename
+	url = https://github.com/danro/rename.vim
+[submodule "vim/bundle/AndrewRadev-splitjoin"]
+	path = vim/bundle/AndrewRadev-splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule "vim/bundle/tpope-vim-surround"]
+	path = vim/bundle/tpope-vim-surround
+	url = https://github.com/tpope/vim-surround

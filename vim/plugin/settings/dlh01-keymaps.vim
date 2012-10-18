@@ -55,7 +55,7 @@ nmap <leader>6 :set spell!<cr>
 nmap <leader>9 :earlier 1000<cr>:echo "Undid 1000 things"<cr>
 
 " Wipe out all buffers (presumably)
-nmap <leader>0 :1,100bd<cr>:echo "Deleted all buffers (probably)"<cr>
+nmap <leader>0 :1,1000bd<cr>:echo "Deleted all buffers (probably)"<cr>
 
 " Open webpage
 nmap <silent> <leader>f :! open %<cr><cr>
@@ -122,6 +122,9 @@ vmap ,{ c{<C-R>"}<ESC>
 " gary bernhardt's hashrocket
 imap <c-l> <space>=><space>
 
+" dave's PHProcket
+imap <c-;> ->
+
 " Toggle NERDTree
 nmap <D-N> :NERDTreeToggle<CR>
 
@@ -155,3 +158,7 @@ nnoremap N Nzz
 
 " Add a line above the current line without going into insert mode on the new line
 " nmap <c-o> O<esc>j
+
+" Splitjoin
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>

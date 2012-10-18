@@ -61,6 +61,9 @@ set nohlsearch
 set ignorecase
 set smartcase
 
+" Search and replace globally (`/g`) by default
+set gdefault
+
 
 " Swap file settings
 " --------------------------------------------------------------------
@@ -84,7 +87,7 @@ set undofile
 " --------------------------------------------------------------------
 
 " Copy indent from current line when opening new line
-" set autoindent
+set autoindent
 
 " Insert indent after a line ending in { or before a line starting with }
 " set smartindent
@@ -121,10 +124,10 @@ set wildignore+=*.zip
 " --------------------------------------------------------------------
 
 " Start scrolling N lines from the top or bottom
-set scrolloff=8
+set scrolloff=7
 
 " Start scrolling N lines from the left or right
-set sidescrolloff=8
+set sidescrolloff=7
 
 " Minimal number of columns to scroll horizontally
 set sidescroll=1
