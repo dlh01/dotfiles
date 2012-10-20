@@ -58,3 +58,6 @@
 [submodule "vim/bundle/tpope-vim-surround"]
 	path = vim/bundle/tpope-vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/bundle/tpope-vim-haml"]
+	path = vim/bundle/tpope-vim-haml
+	url = https://github.com/tpope/vim-haml.git
