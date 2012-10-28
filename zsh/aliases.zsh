@@ -1,4 +1,6 @@
 ## SHORTCUTS
+# cd by .. or ... or ... or mv file ..../.
+alias '..'='cd ..'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -76,6 +78,8 @@ alias la='ls -aC'
 alias lc='cd ~/localhost'
 alias ll='ls -alGh'
 alias ls='ls -Gh'
+alias m='mvim'
+alias mpcpl='mpc playlist'
 alias mv='mv -iv'
 alias mvim='mvim --remote-silent'
 # mysql with mamp: http://blog-en.mamp.info/2009/08/using-mysql-command-line-with-mamp.html
