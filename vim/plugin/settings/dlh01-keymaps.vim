@@ -88,8 +88,8 @@ nnoremap <leader>\0 :set colorcolumn=0<cr>
 
 " Type underscores and dashes on the home row
 imap <silent> <D-k> _
-imap <silent> <D-d> _
-imap <silent> <D-K> -
+imap <silent> <D-d> -
+imap <silent> <D-K> _
 imap <silent> <D-D> -
 
 " ," Surround a word with "quotes"
@@ -162,3 +162,6 @@ nnoremap N Nzz
 " Splitjoin
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
+
+" Show or hide invisibles
+nmap <leader>i :set list!<cr>
