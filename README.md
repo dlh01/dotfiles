@@ -3,12 +3,27 @@
 # Dependencies
 
 * Git
-* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* [prezto](https://github.com/sorin-ionescu/prezto)
+  * Or: [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [osx-trash](http://www.dribin.org/dave/osx-trash/)
 * [yadr](https://github.com/skwp/dotfiles)
 
 
 # Installation
+
+
+## ZSH
+
+### prezto
+
+1. Run `build.rb` to compile all of our modular files into a single file, which is faster to source.
+
+2. Add the following line to `.zshrc`:
+
+      source /path/to/dotfiles/compiled.zshrc
+
+
+### oh-my-zsh
 
 * For each `.zsh` file in `/zsh`: `ln -s ~/dotfiles/zsh/foo.zsh ~/.oh-my-zsh/custom/`
   
@@ -16,10 +31,16 @@
 
 * If necessary, remove the $PATH declaration from `~/zshrc`, as `dotfiles/zsh/path.zsh` handles it
 
+
+## Git
+
 * Install `git` files:
 
     * `ln -s ~/dotfiles/git/gitconfig ~/.gitconfig`
     * `ln -s ~/dotfiles/git/gitignore ~/.gitignore_global`
+
+
+## Vim
 
 * To install the YADR plugin managment tools:
 
