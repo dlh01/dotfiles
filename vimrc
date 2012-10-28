@@ -47,6 +47,13 @@ set clipboard+=unnamed
 " Spell-check on
 set spell
 
+" Show invisibles: tabs, trailing spaces, EOL
+set listchars=tab:▸\ ,eol:¬,trail:-
+
+" Use underscore as a delimiter for word movement
+" http://lglinux.blogspot.com/2008/04/vim-word-movement-with-underscore.html
+set iskeyword-=_
+
 
 " Search settings
 " --------------------------------------------------------------------
@@ -90,7 +97,7 @@ set undofile
 set autoindent
 
 " Insert indent after a line ending in { or before a line starting with }
-" set smartindent
+set smartindent
 
 " Break lines by word, not character
 set linebreak
