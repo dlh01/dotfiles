@@ -97,5 +97,6 @@ alias sse='. ~/.secrets' # (s)ource (se)crets
 alias sza='. ~/dotfiles/zsh/aliases.zsh' # (s)ource (z)shrc (a)liases
 alias trel='tree | less'
 alias uzh='unzip -d ./' # unzip to current directory -- (u)n(z)ip (h)ere
+alias v='vim'
 alias yav='yadr vim-add-plugin -u'
 alias yuv='yadr vim-update-plugins'
