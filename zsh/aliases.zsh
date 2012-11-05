@@ -92,6 +92,7 @@ alias rake='noglob rake'
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rm='trash'
+alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
 alias sse='. ~/.secrets' # (s)ource (se)crets
 alias sza='. ~/dotfiles/zsh/aliases.zsh' # (s)ource (z)shrc (a)liases
