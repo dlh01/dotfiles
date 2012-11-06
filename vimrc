@@ -52,7 +52,7 @@ set listchars=tab:▸\ ,eol:¬,trail:-
 
 " Use underscore as a delimiter for word movement
 " http://lglinux.blogspot.com/2008/04/vim-word-movement-with-underscore.html
-set iskeyword-=_
+" set iskeyword-=_
 
 
 " Search settings
