@@ -44,8 +44,8 @@ set autochdir
 " Yank to clipboard
 set clipboard+=unnamed
 
-" Spell-check on
-set spell
+" Spell-check on for Markdown files
+au filetype markdown set spell
 
 " Show invisibles: tabs, trailing spaces, EOL
 set listchars=tab:▸\ ,eol:¬,trail:-
