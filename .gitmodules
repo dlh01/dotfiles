@@ -64,3 +64,6 @@
 [submodule "vim/bundle/dlh01-snipmate-snippets"]
 	path = vim/bundle/dlh01-snipmate-snippets
 	url = /Users/herreradl/development/snipmate-snippets
+[submodule "vim/bundle/git:--github.com-nathanaelkane-vim-indent-guides"]
+	path = vim/bundle/git:--github.com-nathanaelkane-vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
