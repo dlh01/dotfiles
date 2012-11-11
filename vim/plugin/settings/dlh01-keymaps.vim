@@ -24,7 +24,7 @@ map <leader>ev :NERDTree ~/dotfiles/vim/<cr>
 map <leader>eg :NERDTree ~/localhost/gollum/<cr>
 
 " Quick open ~/dotfiles/zsh in NERDTree
-map <leader>ez :NERDTree ~/dotfiles/zsh/after/<cr>
+map <leader>ez :NERDTree ~/dotfiles/zsh/<cr>
 
 " Quick open current file's directory in NERDTree; overwrites YADR default
 map <c-\> :NERDTree %<cr>
