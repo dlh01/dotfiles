@@ -10,8 +10,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 
-" General config
-" --------------------------------------------------------------------
+" ----------------------------------------------------- General config
 
 " Show relative line numbers
 set nonumber
@@ -43,9 +42,6 @@ set autochdir
 
 " Yank to clipboard
 set clipboard+=unnamed
-
-" Spell-check on for Markdown files
-au filetype markdown set spell
 
 " Show invisibles: tabs, trailing spaces, EOL
 set listchars=tab:▸\ ,eol:¬,trail:-
