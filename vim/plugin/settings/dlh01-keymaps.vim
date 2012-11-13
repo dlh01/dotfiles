@@ -165,3 +165,6 @@ nmap sk :SplitjoinJoin<cr>
 
 " Show or hide invisibles
 nmap <leader>i :set list!<cr>
+
+" Toggle Tagbar
+nmap <F8> :TagbarOpenAutoClose<CR>
