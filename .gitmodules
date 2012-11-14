@@ -73,3 +73,6 @@
 [submodule "vim/bundle/spf13-PIV"]
 	path = vim/bundle/spf13-PIV
 	url = https://github.com/spf13/PIV.git
+[submodule "vim/bundle/dlh01-vim-wordpress-snippets"]
+	path = vim/bundle/dlh01-vim-wordpress-snippets
+	url = /Users/herreradl/development/vim-wordpress-snippets
