@@ -1,0 +1,47 @@
+# Custom taxonomy
+snippet wptax
+	function register_taxonomy_${1:siteprefix_taxname}() {
+
+		$labels = array(
+			'name' => _x( '$2s', '$1' ),
+			'singular_name' => _x( '${2:Singular name}', '$1' ),
+			'singular_name' => _x( '$2', '$1' ),
+			'search_items' => _x( 'Search $2s', '$1' ),
+			'popular_items' => _x( 'Popular $2s', '$1' ),
+			'all_items' => _x( 'All $2s', '$1' ),
+			'parent_item' => _x( 'Parent $2', '$1' ),
+			'parent_item_colon' => _x( 'Parent $2:', '$1' ),
+			'edit_item' => _x( 'Edit $2', '$1' ),
+			'update_item' => _x( 'Update $2', '$1' ),
+			'add_new_item' => _x( 'Add New $2', '$1' ),
+			'new_item_name' => _x( 'New $2', '$1' ),
+			'separate_items_with_commas' => _x( 'Separate $2s with commas', '$1' ),
+			'add_or_remove_items' => _x( 'Add or remove $2s', '$1' ),
+			'choose_from_most_used' => _x( 'Choose from the most used $2s', '$1' ),
+			'menu_name' => _x( '$2s', '$1' ),
+		);
+
+		$args = array( 
+				'labels' => $labels,
+				'public' => true,
+				'show_in_nav_menus' => true,
+				'show_ui' => true,
+				'show_tagcloud' => ${3:false},
+				'hierarchical' => ${4:true},
+
+				'rewrite' => array( 
+						'slug' => '${5:$1}', 
+						'with_front' => true,
+						'hierarchical' => true
+				),
+				'query_var' => '${6:$1}'
+		);
+
+		register_taxonomy( '$1', array('post'${7:,}), $args );
+	}
+
+# get_post_meta
+snippet wpgpm
+	get_post_meta( ${1:$post->ID}, '${2:meta_key}', ${3:true/false} );
+snippet wpgtp
+	get_template_part( "${1}", "${2}" );
