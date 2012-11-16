@@ -3,11 +3,10 @@
 set nocompatible
 
 
-" Pathogen initialization
-" --------------------------------------------------------------------
-runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
+" ----------------------------------------------------- Pathogen
 call pathogen#infect()
-call pathogen#helptags()
+syntax on
+filetype plugin indent on
 
 
 " ----------------------------------------------------- General config
