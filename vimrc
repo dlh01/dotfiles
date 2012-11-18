@@ -219,6 +219,7 @@ nmap j gj
 nmap k gk
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
+nnoremap <F6> :GundoToggle<CR>
 nnoremap <F7> :set hlsearch! hlsearch?<cr>
 nnoremap <leader>\0 :set colorcolumn=0<cr>
 nnoremap <leader>\\ :set colorcolumn=80<cr>
