@@ -6,7 +6,7 @@ set nocompatible
 " ----------------------------------------------------- Pathogen
 call pathogen#infect()
 syntax on
-filetype plugin indent on
+filetype plugin on
 
 
 " ----------------------------------------------------- General config
