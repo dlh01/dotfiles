@@ -1,5 +1,5 @@
 # Custom taxonomy
-snippet wptax
+snippet wrt
 	function register_taxonomy_${1:siteprefix_taxname}() {
 
 		$labels = array(
@@ -41,7 +41,8 @@ snippet wptax
 	}
 
 # get_post_meta
-snippet wpgpm
+snippet wgpm
 	get_post_meta( ${1:$post->ID}, '${2:meta_key}', ${3:true/false} );
-snippet wpgtp
+# get_template_part
+snippet wgtp
 	get_template_part( '${1}', '${2}' );
