@@ -32,7 +32,8 @@ alias grs='git flow release start'
 alias gs='git status'
 alias gsi='git clean -ndX' # (g)it (s)how (i)gnored
 alias gsl='gs | l' # git status | less
-alias gus='git unstage'
+alias guns='git unstage'
+alias gusu='git submodule foreach git pull origin master' # (g)it (u)pdate (su)bmodules
 alias hosts='sudo mvim /etc/hosts'
 # see also the PAGER variable: http://www.linuxquestions.org/questions/linux-desktop-74/can-less-do-not-clear-screen-after-quit-711394/
 alias less='less -riX'
