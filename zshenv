@@ -51,9 +51,10 @@ typeset -gU cdpath fpath mailpath manpath path
 typeset -gUT INFOPATH infopath
 
 # Set the the list of directories that cd searches.
-# cdpath=(
-#   $cdpath
-# )
+cdpath=(
+  # Allow us to type a home-based path in any directory
+  $HOME
+)
 
 # Set the list of directories that info searches for manuals.
 infopath=(
