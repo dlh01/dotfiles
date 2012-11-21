@@ -79,7 +79,13 @@ path=(
   /usr/local/{bin,sbin}
   /usr/{bin,sbin}
   /{bin,sbin}
+  /Applications/MAMP/Library/{bin,sbin}
+  # ~/.local/bin must be before $PATH for Python needs
+  $HOME/.local/bin
   $path
+  /usr/texbin
+  $HOME/bin
+  $HOME/dotfiles/bin
 )
 
 for path_file in /etc/paths.d/*(.N); do
