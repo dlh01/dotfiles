@@ -86,7 +86,6 @@ path=(
   $path
   /usr/texbin
   $HOME/bin
-  $HOME/dotfiles/bin
 )
 
 for path_file in /etc/paths.d/*(.N); do
