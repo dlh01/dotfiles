@@ -21,7 +21,7 @@ snippet wrt
 			'menu_name' => _x( '$2s', '$1' ),
 		);
 
-		$args = array( 
+		$args = array(
 				'labels' => $labels,
 				'public' => true,
 				'show_in_nav_menus' => true,
@@ -29,8 +29,8 @@ snippet wrt
 				'show_tagcloud' => ${3:false},
 				'hierarchical' => ${4:true},
 
-				'rewrite' => array( 
-						'slug' => '${5:$1}', 
+				'rewrite' => array(
+						'slug' => '${5:$1}',
 						'with_front' => true,
 						'hierarchical' => true
 				),
@@ -67,3 +67,18 @@ snippet wid
 # the_author
 snippet wauth
 	the_author();
+# plugin heading
+snippet wplug
+	<?php
+	/*
+	Plugin Name: ${1}
+	Plugin URI:
+	Description: ${2}
+	Version: 0.1
+	Author: David Herrera
+	Author URI:
+	License: GPLv2 or later
+	License URI:
+	*/
+
+	${3}
