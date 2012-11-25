@@ -42,10 +42,10 @@ snippet wrt
 
 # get_post_meta
 snippet wgpm
-	get_post_meta( ${1:$post->ID}, '${2:meta_key}', ${3:true/false} );
+	get_post_meta( ${1:$post->ID}, '${2:meta_key}', ${3:true/false} );${4}
 # get_template_part
 snippet wgtp
-	get_template_part( '${1}', '${2}' );
+	get_template_part( '${1}', '${2}' );${3}
 # get_search_form
 snippet wgsf
 	get_search_form();
@@ -82,3 +82,6 @@ snippet wplug
 	*/
 
 	${3}
+# the_post_thumbnail
+snippet wthumb
+	the_post_thumbnail( '${1:$size}'${2:, $attr} )
