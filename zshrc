@@ -68,6 +68,7 @@ alias mvim='mvim --remote-silent'
 alias mysql='mysql --host=localhost -uroot -proot'
 alias mysqldump='mysqldump --host=localhost -uroot -proot'
 alias of='open .'
+alias pp='mpc toggle' # (p)lay (p)ause
 # fix octopress+rake issue: https://github.com/imathis/octopress/issues/117#issuecomment-1899650
 alias rake='noglob rake' 
 # requires osx-trash: sudo gem install osx-trash
