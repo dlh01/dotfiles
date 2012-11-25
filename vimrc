@@ -246,3 +246,6 @@ vmap ,] c[<C-R>"]<ESC>
 vmap ,{ c{<C-R>"}<ESC>
 vmap ,} c{ <C-R>" }<ESC>
 vmap <D-A> :Tabularize /
+" Toggle current fold open or closed
+" http://vimcasts.org/episodes/how-to-fold/
+nnoremap <Space> za
