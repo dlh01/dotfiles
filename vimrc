@@ -249,3 +249,6 @@ vmap <D-A> :Tabularize /
 " Toggle current fold open or closed
 " http://vimcasts.org/episodes/how-to-fold/
 nnoremap <Space> za
+" 'Refocus' folds
+" https://github.com/sjl/dotfiles/blob/eea18b00b8c74943f5094fddf91d3c2a7e0a7242/vim/vimrc#L534
+nnoremap ,z zMzvzz
