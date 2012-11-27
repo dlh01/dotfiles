@@ -25,6 +25,10 @@ source ~/.secrets
 # Activate z
 . ~/dotfiles/bin/z.sh
 
+# Bind reverse-history searching to Ctrl-R, for vi mode
+# http://unix.stackexchange.com/questions/44115/how-do-i-perform-a-reverse-history-search-in-zshs-vi-mode
+bindkey "^R" history-incremental-search-backward
+
 #
 # Aliases
 #
