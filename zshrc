@@ -25,6 +25,10 @@ source ~/.secrets
 # Activate z
 . ~/dotfiles/bin/z.sh
 
+# Source RVM
+source $HOME/.rvm/scripts/rvm
+
+
 # Bind reverse-history searching to Ctrl-R, for vi mode
 # http://unix.stackexchange.com/questions/44115/how-do-i-perform-a-reverse-history-search-in-zshs-vi-mode
 bindkey "^R" history-incremental-search-backward
@@ -68,6 +72,7 @@ alias lc='cd ~/localhost'
 alias ll='ls -alGh'
 alias ls='ls -Gh'
 alias m='mvim'
+alias mcd='mkdcd'
 alias mpcpl='mpc playlist'
 # alias mv='mv -iv'
 alias mvim='mvim --remote-silent'
