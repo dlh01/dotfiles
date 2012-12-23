@@ -51,6 +51,7 @@ alias gap='git add -Ap'
 alias gc='git commit'
 alias gcm='git ci -m'
 alias gd='git diff'
+alias gds='git diff --staged'
 alias getip='ping -c 1 '
 alias gff='git flow feature finish'
 alias gfs='git flow feature start'
@@ -81,8 +82,10 @@ alias mysql='mysql --host=localhost -uroot -proot'
 alias mysqldump='mysqldump --host=localhost -uroot -proot'
 alias of='open .'
 alias pp='mpc toggle' # (p)lay (p)ause
+alias pub='cd ~/Dropbox/Public/'
 # fix octopress+rake issue: https://github.com/imathis/octopress/issues/117#issuecomment-1899650
 alias rake='noglob rake' 
+alias rand="openssl rand -base64 18 | tr '\n' '[' | pbcopy"
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rm='trash'
