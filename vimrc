@@ -131,7 +131,7 @@ set wildignore+=*.zip
 set scrolloff=7
 
 " Start scrolling N lines from the left or right
-set sidescrolloff=7
+set sidescrolloff=30
 
 " Minimal number of columns to scroll horizontally
 set sidescroll=1
