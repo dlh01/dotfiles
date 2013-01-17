@@ -210,6 +210,7 @@ nmap <leader>3 :call DumbQuotes()<cr><cr>
 nmap <leader>4 :set wrap!<cr>
 nmap <leader>5 :%s/
 nmap <leader>6 :set spell!<cr>
+nmap <leader>8 :saveas ~/Desktop/
 nmap <leader>9 :earlier 1000<cr>:echo "Undid 1000 things"<cr>
 nmap <leader>i :set list!<cr>
 nmap <silent> ,vc yy:<C-f>p<C-c><CR>
@@ -252,3 +253,4 @@ nnoremap <Space> za
 " 'Refocus' folds
 " https://github.com/sjl/dotfiles/blob/eea18b00b8c74943f5094fddf91d3c2a7e0a7242/vim/vimrc#L534
 nnoremap ,z zMzvzz
+nmap <leader>c :close<cr>
