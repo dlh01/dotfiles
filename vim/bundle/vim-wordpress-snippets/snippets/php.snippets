@@ -74,14 +74,14 @@ snippet wplug
 	Plugin Name: ${1}
 	Plugin URI:
 	Description: ${2}
-	Version: 0.1
+	Version: ${3}
 	Author: David Herrera
 	Author URI:
 	License: GPLv2 or later
 	License URI:
 	*/
 
-	${3}
+	${4}
 # the_post_thumbnail
 snippet wthumb
 	the_post_thumbnail( '${1:$size}'${2:, $attr} )
