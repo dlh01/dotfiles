@@ -60,6 +60,7 @@ alias gm='git merge'
 alias gnb='git nb' # new branch aka checkout -b
 alias gol='cd ~/localhost/gollum'
 alias gpdm='git push origin develop'
+alias gpo='git push origin'
 alias gpom='git push origin master'
 alias grf='git flow release finish'
 alias grs='git flow release start'
