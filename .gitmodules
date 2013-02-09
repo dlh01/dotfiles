@@ -79,3 +79,9 @@
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip
+[submodule "community/mathiasbynens"]
+	path = community/mathiasbynens
+	url = https://github.com/mathiasbynens/dotfiles
+[submodule "community/necolas"]
+	path = community/necolas
+	url = https://github.com/necolas/dotfiles
