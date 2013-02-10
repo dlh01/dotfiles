@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# bashrc
+
+# Assumes Bash 4 is installed via Homebrew and set as the default shell
+# http://vigodome.com/blog/2011/12/30/change-default-shell/
+
+[ -n "$PS1" ] && source ~/.bash_profile

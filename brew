@@ -52,6 +52,7 @@ brew install optipng
 # See http://superuser.com/questions/334252/the-best-way-to-make-macvims-vim-console-not-mvim-the-default-instead-of-mac
 brew install macvim --override-system-vim
 brew install phantomjs
+brew install trash
 
 # Remove outdated versions from the cellar
 brew cleanup
