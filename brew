@@ -53,6 +53,8 @@ brew install optipng
 brew install macvim --override-system-vim
 brew install phantomjs
 brew install trash
+# ledger 3.0: http://comments.gmane.org/gmane.comp.finance.ledger.general/3915
+brew install --HEAD --python ledger
 
 # Remove outdated versions from the cellar
 brew cleanup
