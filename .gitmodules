@@ -85,3 +85,6 @@
 [submodule "community/necolas"]
 	path = community/necolas
 	url = https://github.com/necolas/dotfiles
+[submodule "vim/bundle/ledger"]
+	path = vim/bundle/ledger
+	url = https://github.com/ledger/vim-ledger
