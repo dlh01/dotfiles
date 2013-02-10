@@ -23,3 +23,6 @@ shopt -s cdspell
 
 # Auto-cd into directories
 shopt -s autocd
+
+# Enable recursive globbing
+shopt -s globstar

@@ -17,3 +17,8 @@ set completion-ignore-case on
 # through commands (i.e. more intelligent Up/Down-arrow behavior)
 "\e[B": history-search-forward
 "\e[A": history-search-backward
+
+# Make Ctrl-W erase words in a string, not until the first space
+# http://superuser.com/questions/212446/binding-backward-kill-word-to-ctrlw
+set bind-tty-special-chars off
+"\C-w": backward-kill-word

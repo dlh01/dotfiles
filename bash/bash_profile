@@ -16,7 +16,7 @@ declare -a files=(
 for index in ${!files[*]}
 do
     if [[ -r ${files[$index]} ]]; then
-	echo "Sourcing " ${files[$index]}
+	echo "Sourcing" ${files[$index]}
         source ${files[$index]}
     fi
 done
