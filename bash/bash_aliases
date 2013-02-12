@@ -15,6 +15,7 @@ alias ee='mvim ~/.secrets' # (e)dit (se)crets
 alias ga='git add -A'
 alias gap='git add -Ap'
 alias gc='git commit'
+alias gco='git checkout'
 alias gcm='git ci -m'
 alias gd='git diff'
 alias gds='git diff --staged'
@@ -53,11 +54,12 @@ alias of='open .'
 alias pp='mpc toggle' # (p)lay (p)ause
 alias pub='cd ~/Dropbox/Public/'
 # fix octopress+rake issue: https://github.com/imathis/octopress/issues/117#issuecomment-1899650
-alias rake='noglob rake' 
+# alias rake='noglob rake' 
 alias rand="openssl rand -base64 18 | tr '\n' '[' | pbcopy"
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rm='trash'
+alias sa='source ~/dotfiles/bash/bash_aliases'
 alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
 alias trel='tree | less'
