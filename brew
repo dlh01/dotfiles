@@ -55,9 +55,10 @@ brew install phantomjs
 brew install trash
 # ledger 3.0: http://comments.gmane.org/gmane.comp.finance.ledger.general/3915
 brew install --HEAD --python ledger
-# MPD and dependencies
+# MPD, dependencies, and client
 brew install libzzip
 brew install mpd
+brew install mpc
 
 # Remove outdated versions from the cellar
 brew cleanup
