@@ -61,7 +61,8 @@ brew install mpd
 brew install mpc
 # ctags required for Vim's Tagbar
 brew install ctags
-brew install z
+brew install autojump
+brew install markdown
 
 # Remove outdated versions from the cellar
 brew cleanup
