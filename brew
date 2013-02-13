@@ -59,6 +59,8 @@ brew install --HEAD --python ledger
 brew install libzzip
 brew install mpd
 brew install mpc
+# ctags required for Vim's Tagbar
+brew install ctags
 
 # Remove outdated versions from the cellar
 brew cleanup
