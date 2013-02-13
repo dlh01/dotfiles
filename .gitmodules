@@ -88,3 +88,6 @@
 [submodule "vim/bundle/ledger"]
 	path = vim/bundle/ledger
 	url = https://github.com/ledger/vim-ledger
+[submodule "community/skwp"]
+	path = community/skwp
+	url = https://github.com/skwp/dotfiles
