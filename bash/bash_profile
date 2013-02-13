@@ -30,3 +30,6 @@ bash_completion_path="$(brew --prefix)/etc/bash_completion"
 if [[ -r $bash_completion_path ]]; then
     source $bash_completion_path
 fi
+
+# Source autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
