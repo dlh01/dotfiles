@@ -1,0 +1,25 @@
+echo "Hello, this is zshrc calling."
+source ~/dotfiles/bash/bash_aliases
+
+# Enable advanced tab-completion
+autoload -Uz compinit
+compinit
+
+# Enable autocorrect
+setopt correctall
+
+# Enable advanced prompts
+autoload -Uz promptinit
+promptinit
+prompt walters
+
+# Enable autocd
+setopt autocd
+
+# Enable extended globbing
+setopt extendedglob
+
+# Keep 2000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=2000
+SAVEHIST=2000
+HISTFILE=~/.zsh_history
