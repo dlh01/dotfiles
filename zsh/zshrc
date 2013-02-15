@@ -1,5 +1,6 @@
 echo "Hello, this is zshrc calling."
 source ~/dotfiles/bash/bash_aliases
+source ~/.secrets
 
 # Enable advanced tab-completion
 autoload -Uz compinit
