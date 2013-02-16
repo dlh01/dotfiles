@@ -11,10 +11,21 @@ compinit
 # Enable autocorrect
 setopt correctall
 
+# Enable gathering of VCS information for Git and SVN
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn
+precmd () {
+  vcs_info
+}
+setopt prompt_subst
+
 # Enable advanced prompts
 autoload -Uz promptinit
 promptinit
-prompt walters
+
+# Use a walters-like prompt with VCS information tacked on
+export PROMPT='%B%(?..[%?] )%b%n@%U%m%u> '
+export RPROMPT="${vcs_info_msg_0_} %F{${1:-green}}%~%f"
 
 # Enable autocd
 setopt autocd
@@ -22,7 +33,7 @@ setopt autocd
 # Enable extended globbing
 setopt extendedglob
 
-# Keep 2000 lines of history within the shell and save it to ~/.zsh_history:
+# Keep 2000 lines of history within the shell and save them to ~/.zsh_history:
 HISTSIZE=2000
 SAVEHIST=2000
 HISTFILE=~/.zsh_history
@@ -55,3 +66,6 @@ bindkey '^e' end-of-line
 # http://zsh.sourceforge.net/Intro/intro_13.html
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/completion.zsh
 # https://github.com/skwp/dotfiles/tree/master/zsh
+# http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information
+# http://zsh.git.sourceforge.net/git/gitweb.cgi?p=zsh/zsh;a=blob;f=Functions/Prompts/prompt_walters_setup
+# http://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
