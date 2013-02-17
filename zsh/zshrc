@@ -11,21 +11,21 @@ compinit
 # Enable autocorrect
 setopt correctall
 
-# Enable gathering of VCS information for Git and SVN
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn
-precmd () {
-  vcs_info
-}
-setopt prompt_subst
-
 # Enable advanced prompts
 autoload -Uz promptinit
 promptinit
 
+# Enable gathering of VCS information for Git and SVN
+autoload -Uz vcs_info
+precmd () { vcs_info }
+zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:*' check-for-changes true
+# zstyle ':vcs_info:git*' formats "%s  %r/%S %b %m%u%c "
+setopt prompt_subst
+
 # Use a walters-like prompt with VCS information tacked on
-export PROMPT='%B%(?..[%?] )%b%n@%U%m%u> '
-export RPROMPT="${vcs_info_msg_0_} %F{${1:-green}}%~%f"
+export PROMPT='%B%(?..[%?] )%b%n@%U%m%u${vcs_info_msg_0_} > '
+export RPROMPT="%F{${1:-green}}%~%f"
 
 # Enable autocd
 setopt autocd
@@ -69,3 +69,4 @@ bindkey '^e' end-of-line
 # http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information
 # http://zsh.git.sourceforge.net/git/gitweb.cgi?p=zsh/zsh;a=blob;f=Functions/Prompts/prompt_walters_setup
 # http://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
+# http://unix.stackexchange.com/a/14267
