@@ -173,7 +173,7 @@ set statusline+=\
 " ------------------------------------------------------------ Keymaps
 
 imap <D-/> <Esc>:TComment<CR>i
-imap <c-;> ->
+imap <c-k> ->
 imap <c-l> <space>=><space>
 imap <leader>w <C-o>:w<cr>
 imap <leader>x <C-o>:x<cr>
