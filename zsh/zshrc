@@ -1,7 +1,7 @@
 echo "Hello, this is zshrc calling."
 
 # Source aliases and private files
-source ~/dotfiles/bash/bash_aliases
+source ~/dotfiles/aliases
 source ~/.secrets
 
 # Enable advanced tab-completion
