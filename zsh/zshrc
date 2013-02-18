@@ -19,8 +19,7 @@ promptinit
 autoload -Uz vcs_info
 precmd () { vcs_info }
 zstyle ':vcs_info:*' enable git svn
-zstyle ':vcs_info:*' check-for-changes true
-# zstyle ':vcs_info:git*' formats "%s  %r/%S %b %m%u%c "
+zstyle ':vcs_info:*' check-for-changes true # potential performance drag
 setopt prompt_subst
 
 # Use a walters-like prompt with VCS information tacked on
