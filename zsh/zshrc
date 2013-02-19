@@ -17,7 +17,6 @@ promptinit
 
 # Enable gathering of VCS information for Git and SVN
 autoload -Uz vcs_info
-precmd () { vcs_info }
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' check-for-changes true # potential performance drag
 setopt prompt_subst
@@ -36,6 +35,9 @@ setopt extendedglob
 HISTSIZE=2000
 SAVEHIST=2000
 HISTFILE=~/.zsh_history
+
+# Add timestamps to history
+setopt EXTENDED_HISTORY
 
 # Write a home folder-based `cd` command from any directory
 CDPATH=~
@@ -58,6 +60,10 @@ bindkey '^r' history-incremental-search-backward
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
 
+# Do just before presenting the prompt
+precmd () {
+  vcs_info
+}
 
 # Sources:
 # www.gentoo.org/doc/en/zsh.xml
@@ -69,3 +75,4 @@ bindkey '^e' end-of-line
 # http://zsh.git.sourceforge.net/git/gitweb.cgi?p=zsh/zsh;a=blob;f=Functions/Prompts/prompt_walters_setup
 # http://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
 # http://unix.stackexchange.com/a/14267
+# https://github.com/holman/dotfiles/blob/master/zsh/config.zsh
