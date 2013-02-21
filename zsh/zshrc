@@ -26,7 +26,7 @@ zstyle ':vcs_info:*' check-for-changes true # potential performance drag
 setopt prompt_subst
 
 # Customize the prompt
-export PROMPT='%~: ) '
+export PROMPT='%~ : ) '
 export RPROMPT='${vcs_info_msg_0_}'
 
 # Enable autocd
