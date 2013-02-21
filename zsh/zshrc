@@ -5,7 +5,8 @@ source ~/dotfiles/aliases
 source ~/.secrets
 
 # Set up PATH
-export PATH=$PATH:/Applications/MAMP/Library/bin
+# Ensure user-installed binaries take precedence
+export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/Library/bin
 
 # Enable advanced tab-completion
 autoload -Uz compinit
@@ -88,3 +89,4 @@ precmd () {
 # http://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
 # http://unix.stackexchange.com/a/14267
 # https://github.com/holman/dotfiles/blob/master/zsh/config.zsh
+# http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/
