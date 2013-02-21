@@ -13,6 +13,7 @@ alias dr='cd ~/Dropbox'
 alias du='du -h -d 2'
 alias ea='mvim ~/dotfiles/bash/bash_aliases' # (e)dit (a)liases
 alias ee='mvim ~/.secrets' # (e)dit (se)crets
+alias ez='mvim ~/dotfiles/zsh/zshrc' # (e)dit (z)shrc
 alias ga='git add -A'
 alias gb='git branch'
 alias gap='git add -Ap'
