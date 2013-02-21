@@ -91,3 +91,6 @@
 [submodule "community/skwp"]
 	path = community/skwp
 	url = https://github.com/skwp/dotfiles
+[submodule "community/prezto"]
+	path = community/prezto
+	url = https://github.com/sorin-ionescu/prezto
