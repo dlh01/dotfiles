@@ -67,9 +67,6 @@
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
-[submodule "zprezto"]
-	path = zprezto
-	url = https://github.com/sorin-ionescu/prezto
 [submodule "vim/bundle/vim-markdown-folding"]
 	path = vim/bundle/vim-markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding
