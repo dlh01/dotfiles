@@ -86,6 +86,8 @@ function expand-dot-to-parent-directory-path {
 zle -N expand-dot-to-parent-directory-path
 bindkey "." expand-dot-to-parent-directory-path
 
+# Source autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # Do just before presenting the prompt
 precmd () {
