@@ -63,12 +63,18 @@ bindkey '^e' end-of-line
 # vim is our editor
 export EDITOR=vim
 
+# Makes a directory and changes to it.
+function mkdcd {
+  [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
+}
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
 }
 
 # Sources:
+# Everything in the `community` directory
 # www.gentoo.org/doc/en/zsh.xml
 # The .zshrc that came with a Dreamhost shell
 # http://zsh.sourceforge.net/Intro/intro_13.html
