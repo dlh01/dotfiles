@@ -72,6 +72,21 @@ function mkdcd {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 
+# Bind Fn+Delete to forward-delete
+bindkey "^[[3~" delete-char
+
+# Expand .... to ../..
+function expand-dot-to-parent-directory-path {
+  if [[ $LBUFFER = *.. ]]; then
+    LBUFFER+='/..'
+  else
+    LBUFFER+='.'
+  fi
+}
+zle -N expand-dot-to-parent-directory-path
+bindkey "." expand-dot-to-parent-directory-path
+
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
@@ -90,3 +105,4 @@ precmd () {
 # http://unix.stackexchange.com/a/14267
 # https://github.com/holman/dotfiles/blob/master/zsh/config.zsh
 # http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/
+# http://superuser.com/questions/169920/binding-fn-delete-in-zsh-on-mac-os-x
