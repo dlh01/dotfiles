@@ -60,6 +60,9 @@ bindkey '^r' history-incremental-search-backward
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
 
+# vim is our editor
+export EDITOR=vim
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
