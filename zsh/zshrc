@@ -4,6 +4,9 @@ echo "Hello, this is zshrc calling."
 source ~/dotfiles/aliases
 source ~/.secrets
 
+# Set up PATH
+export PATH=$PATH:/Applications/MAMP/Library/bin
+
 # Enable advanced tab-completion
 autoload -Uz compinit
 compinit
