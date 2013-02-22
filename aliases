@@ -11,7 +11,7 @@ alias dk='~/Desktop'
 alias dl='cd ~/Downloads'
 alias dr='cd ~/Dropbox'
 alias du='du -h -d 2'
-alias ea='mvim ~/dotfiles/bash/bash_aliases' # (e)dit (a)liases
+alias ea='mvim ~/dotfiles/aliases' # (e)dit (a)liases
 alias ee='mvim ~/.secrets' # (e)dit (se)crets
 alias ez='mvim ~/dotfiles/zsh/zshrc' # (e)dit (z)shrc
 alias ga='git add -A'
@@ -53,6 +53,7 @@ alias mvim='mvim --remote-silent'
 # mysql with mamp: http://blog-en.mamp.info/2009/08/using-mysql-command-line-with-mamp.html
 alias mysql='mysql --host=localhost -uroot -proot'
 alias mysqldump='mysqldump --host=localhost -uroot -proot'
+alias ncm='ncmpcpp'
 alias of='open .'
 alias pp='mpc toggle' # (p)lay (p)ause
 alias pub='cd ~/Dropbox/Public/'
@@ -62,7 +63,7 @@ alias rand="openssl rand -base64 18 | tr '\n' '[' | pbcopy"
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rm='trash'
-alias sa='source ~/dotfiles/bash/bash_aliases'
+alias sa='source ~/dotfiles/aliases'
 alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
 alias trel='tree | less'
