@@ -108,6 +108,9 @@ set tabstop=2
 " Number of spaces for >> and <<
 set shiftwidth=2
 
+" Backspace by indendation level
+set softtabstop=2
+
 
 " Command line completion
 " --------------------------------------------------------------------
