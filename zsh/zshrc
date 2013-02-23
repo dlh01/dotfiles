@@ -5,8 +5,11 @@ source ~/dotfiles/aliases
 source ~/.secrets
 
 # Set up PATH
-# Ensure user-installed binaries take precedence
-export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/Library/bin
+# Ensure /usr/local/bin takes precedence over /usr/bin
+# Include brew-installed GNU core utilities bin
+# Add npm-installed package bin
+# Add MAMP bin
+export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin
 
 # Enable advanced tab-completion
 autoload -Uz compinit
