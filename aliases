@@ -42,6 +42,7 @@ alias gusu='git submodule foreach git pull origin master' # (g)it (u)pdate (su)b
 alias hosts='sudo mvim /etc/hosts'
 alias l='less'
 alias la='ls -aC'
+alias less='less -riX'
 alias lc='cd ~/localhost'
 alias ll='ls -alGh'
 alias ls='ls -Gh'
