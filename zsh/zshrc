@@ -1,4 +1,5 @@
 echo "Hello, this is zshrc calling."
+echo "The latest uptime statistics:" `uptime`
 
 # Source aliases and private files
 source ~/dotfiles/aliases
