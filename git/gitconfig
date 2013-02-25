@@ -85,7 +85,7 @@
 [merge]
   summary = true
   verbosity = 1
-  ff = false
+  ff = true
 [apply]
   whitespace = nowarn
 [branch]
