@@ -77,9 +77,13 @@ bindkey -v
 # Use Ctrl-r for incremental history searches
 bindkey '^r' history-incremental-search-backward
 
-# Use emacs-style keybindings for jumping to line endings or beginnings
+# emacs-style keybindings for jumping to line endings or beginnings
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
+
+# OSX-style keybindings for jumping to line endings or beginnings
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 # vim is our editor
 export EDITOR=vim
