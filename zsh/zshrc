@@ -128,9 +128,48 @@ server() {
     python -c $'import SimpleHTTPServer;\nSimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map[""] = "text/plain";\nSimpleHTTPServer.test();' "$port"
 }
 
+# Sets the terminal window title.
+function set-terminal-window-title {
+  if [[ "$TERM" == ((x|a|ml|dt|E)term*|(u|)rxvt*) ]]; then
+    printf "\e]2;%s\a" ${(V)argv}
+  fi
+}
+
+# Sets the terminal tab title.
+function set-terminal-tab-title {
+  if [[ "$TERM" == ((x|a|ml|dt|E)term*|(u|)rxvt*) ]]; then
+    printf "\e]1;%s\a" ${(V)argv}
+  fi
+}
+
+# Sets the tab and window titles with a given path.
+function set-titles-with-path {
+  emulate -L zsh
+  setopt EXTENDED_GLOB
+
+  local absolute_path="${${1:a}:-$PWD}"
+
+  if [[ "$TERM_PROGRAM" == 'Apple_Terminal' ]]; then
+    printf '\e]7;%s\a' "file://$HOST${absolute_path// /%20}"
+  else
+    local abbreviated_path="${absolute_path/#$HOME/~}"
+    local truncated_path="${abbreviated_path/(#m)?(#c15,)/...${MATCH[-12,-1]}}"
+    unset MATCH
+
+    if [[ "$TERM" == screen* ]]; then
+      set-screen-window-title "$truncated_path"
+    else
+      set-terminal-window-title "$abbreviated_path"
+      set-terminal-tab-title "$truncated_path"
+    fi
+  fi
+}
+
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
+  set-titles-with-path
 }
 
 # Sources:
