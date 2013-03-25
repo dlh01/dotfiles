@@ -61,6 +61,7 @@ alias mysql='mysql --host=localhost -uroot -proot'
 alias mysqldump='mysqldump --host=localhost -uroot -proot'
 alias ncm='ncmpcpp'
 alias of='open .'
+alias pl='mpc playlist -f " [%position%) %artist% - %title%]"'
 alias pp='mpc toggle' # (p)lay (p)ause
 alias pub='cd ~/Dropbox/Public/'
 # fix octopress+rake issue: https://github.com/imathis/octopress/issues/117#issuecomment-1899650
