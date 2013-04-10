@@ -165,6 +165,14 @@ function set-titles-with-path {
   fi
 }
 
+# Node and modules path
+# http://shaw.al.s3.amazonaws.com/nicar13/nicar-2013-node.html
+export NODE_PATH="/usr/local/lib/node: \
+      /usr/local/lib/node_modules: \
+      /usr/local/share/npm/lib/node_modules"
+
+# Help wp-cli work with MAMP
+export WP_CLI_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
 
 # Do just before presenting the prompt
 precmd () {

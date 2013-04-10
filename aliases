@@ -2,8 +2,8 @@ alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
-alias bal='ledger -b "this month" balance -f'
-alias ball='ledger bal -f'
+alias bal='ledger bal -f'
+alias balmonth='ledger -b "this month" balance -f'
 alias c='cd'
 alias cdb='cd -'
 alias crashplan-check='ps auxww | grep -i CrashPlanService'
@@ -70,9 +70,11 @@ alias rand="openssl rand -base64 18 | tr '\n' '[' | pbcopy"
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rm='trash'
+alias s='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias sa='source ~/dotfiles/aliases'
 alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
 alias trel='tree | less'
 alias uzh='unzip -d ./' # unzip to current directory -- (u)n(z)ip (h)ere
 alias v='vim'
+alias yo='nocorrect yo'
