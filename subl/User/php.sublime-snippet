@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[get_template_part( '$1', '$2' );]]></content>
+  <tagTrigger>wgtp</tagTrigger>
+  <scope>source.php</scope>
+  <description>Get template part</description>
+</snippet>
