@@ -76,6 +76,8 @@ alias sa='source ~/dotfiles/aliases'
 alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
 alias trel='tree | less'
+# convert unix time: http://stackoverflow.com/a/14107637
+alias utime='date -r'
 alias uzh='unzip -d ./' # unzip to current directory -- (u)n(z)ip (h)ere
 alias v='vim'
 alias yo='nocorrect yo'
