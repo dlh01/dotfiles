@@ -109,3 +109,6 @@
 [submodule "vim/bundle/visual-star-search"]
 	path = vim/bundle/visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search
+[submodule "zsh/history-substring-search"]
+	path = zsh/history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
