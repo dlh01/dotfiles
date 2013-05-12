@@ -6,3 +6,5 @@
 # http://vigodome.com/blog/2011/12/30/change-default-shell/
 
 [ -n "$PS1" ] && source ~/.bash_profile
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

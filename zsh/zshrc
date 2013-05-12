@@ -27,6 +27,7 @@ promptinit
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' check-for-changes true # potential performance drag
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked # show untracked files
 setopt prompt_subst
 
 # Customize the prompt
@@ -177,6 +178,14 @@ export WP_CLI_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
 # Source history-substring-search
 source ~/dotfiles/zsh/history-substring-search/zsh-history-substring-search.zsh
 
+# Show untracked files in `vcs_info`
+function +vi-git-untracked(){
+  if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+    git status --porcelain | grep '??' &> /dev/null ; then
+      hook_com[unstaged]+='?'
+  fi
+}
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
@@ -197,3 +206,10 @@ precmd () {
 # https://github.com/holman/dotfiles/blob/master/zsh/config.zsh
 # http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/
 # http://superuser.com/questions/169920/binding-fn-delete-in-zsh-on-mac-os-x
+# http://www.zsh.org/mla/workers/2011/msg00554.html
+# https://github.com/sunaku/home/blob/master/.zsh/config/prompt.zsh
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
