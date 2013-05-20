@@ -1,5 +1,29 @@
 [
   // https://news.ycombinator.com/item?id=5521505
   { "keys": ["super+v"], "command": "paste_and_indent" },
-  { "keys": ["super+shift+v"], "command": "paste" }
+  { "keys": ["super+shift+v"], "command": "paste" },
+  {
+    "keys": ["control+k"],
+    "command": "insert",
+    "args": {"characters": "->"},
+    "context": [ { "key": "setting.command_mode", "operand": false } ]
+  },
+  {
+    "keys": ["control+l"],
+    "command": "insert",
+    "args": {"characters": " => "},
+    "context": [ { "key": "setting.command_mode", "operand": false } ]
+  },
+  {
+    "keys": ["super+k"],
+    "command": "insert",
+    "args": {"characters": "_"},
+    "context": [ { "key": "setting.command_mode", "operand": false } ]
+  },
+  {
+    "keys": ["super+d"],
+    "command": "insert",
+    "args": {"characters": "-"},
+    "context": [ { "key": "setting.command_mode", "operand": false } ]
+  }
 ]

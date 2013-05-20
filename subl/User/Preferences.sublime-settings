@@ -1,13 +1,21 @@
 {
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
-	"font_size": 14.0,
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+	"disable_tab_abbreviations": true,
+	"font_face": "Inconsolata",
+	"font_size": 16.0,
 	"ignored_packages":
 	[
 	],
-	"jsdocs_align_tags": "shallow",
+	"jsdocs_align_tags": "no",
 	"open_files_in_new_window": false,
+	"rulers":
+	[
+		70
+	],
 	"scroll_past_end": true,
+	"soda_classic_tabs": true,
 	"tab_size": 2,
+	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true
