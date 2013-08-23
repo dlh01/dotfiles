@@ -1,4 +1,4 @@
-echo "Hello, this is zshrc calling."
+echo "Hello, this is zshrc calling. Bass frequencies initiated."
 echo "The latest uptime statistics:" `uptime`
 
 # Source aliases and private files
@@ -10,7 +10,8 @@ source ~/.secrets
 # Include brew-installed GNU core utilities bin
 # Add npm-installed package bin
 # Add MAMP bin
-export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin
+# Add Composer scripts
+export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin:$HOME/.composer/bin
 
 # Enable advanced tab-completion
 autoload -Uz compinit
@@ -31,7 +32,9 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked # show untracked files
 setopt prompt_subst
 
 # Customize the prompt
-export PROMPT='%F{green}%~ : ) %f'
+export PROMPT='
+%F{yellow}%n%F{white}@%F{magenta}%m%F{white}: %F{green}%~
+$ %f'
 export RPROMPT='%F{green}${vcs_info_msg_0_}%f'
 
 # Enable autocd
@@ -157,7 +160,7 @@ function set-titles-with-path {
     local truncated_path="${abbreviated_path/(#m)?(#c15,)/...${MATCH[-12,-1]}}"
     unset MATCH
 
-    if [[ "$TERM" == screen* ]]; then
+    if [[ "$TERM" == screen* && "$TMUX" == '' ]]; then
       set-screen-window-title "$truncated_path"
     else
       set-terminal-window-title "$abbreviated_path"
@@ -186,6 +189,9 @@ function +vi-git-untracked(){
   fi
 }
 
+# Source virtualenvwrapper
+source /usr/local/share/python/virtualenvwrapper.sh
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
@@ -208,6 +214,7 @@ precmd () {
 # http://superuser.com/questions/169920/binding-fn-delete-in-zsh-on-mac-os-x
 # http://www.zsh.org/mla/workers/2011/msg00554.html
 # https://github.com/sunaku/home/blob/master/.zsh/config/prompt.zsh
+# https://gist.github.com/brianboyer/1696819
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
