@@ -25,5 +25,7 @@
     "command": "insert",
     "args": {"characters": "-"},
     "context": [ { "key": "setting.command_mode", "operand": false } ]
-  }
+  },
+  { "keys": ["control+shift+/"], "command": "goto_documentation" },
+  { "keys": ["control+\\"], "command": "reveal_in_side_bar" }
 ]

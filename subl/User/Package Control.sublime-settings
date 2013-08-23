@@ -1,16 +1,21 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"Boron Color Scheme",
+		"CoffeeScript",
 		"Color Highlighter",
 		"CTags",
-		"Dayle Rees Color Schemes",
 		"DocBlockr",
+		"EditorConfig",
 		"Emmet",
+		"Git",
+		"Goto Documentation",
 		"Ledger syntax highlighting",
+		"Markdown Preview",
 		"MoveTab",
 		"Origami",
 		"Package Control",
@@ -20,8 +25,10 @@
 		"Solarized Color Scheme",
 		"SublimeBlockCursor",
 		"SublimeLinter",
+		"Syntax Highlighting for Sass",
 		"Theme - Flatland",
 		"Theme - Soda",
+		"Tomorrow Color Schemes",
 		"Vintage-Origami",
 		"VintageEx"
 	]
