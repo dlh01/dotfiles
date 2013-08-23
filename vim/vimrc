@@ -42,7 +42,10 @@ set hidden
 set autochdir
 
 " Yank to clipboard
-set clipboard+=unnamed
+" Fix for tmux: http://stackoverflow.com/a/11421329
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
 
 " Show invisibles: tabs, trailing spaces, EOL
 set listchars=tab:▸\ ,eol:¬,trail:-
