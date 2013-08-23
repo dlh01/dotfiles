@@ -39,6 +39,7 @@ alias gpod='git push origin develop'
 alias gpom='git push origin master'
 alias grf='git flow release finish'
 alias grs='git flow release start'
+alias grunt-init='nocorrect grunt-init'
 alias gs='git status'
 alias gsi='git clean -ndX' # (g)it (s)how (i)gnored
 alias gsl='gs | l' # git status | less
@@ -71,11 +72,14 @@ alias pub='cd ~/Dropbox/Public/'
 alias rand="openssl rand -hex 8 | pbcopy"
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
+alias rd='rake deploy'
 alias rm='trash'
 alias s='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias s3='/Applications/Sublime\ Text\ 3b.app/Contents/SharedSupport/bin/subl'
 alias sa='source ~/dotfiles/aliases'
 alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
+alias tmux='nocorrect tmux'
 alias trel='tree | less'
 # convert unix time: http://stackoverflow.com/a/14107637
 alias utime='date -r'
