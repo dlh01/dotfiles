@@ -63,7 +63,7 @@ alias mvim='mvim --remote-silent'
 alias mysql='mysql --host=localhost -uroot -proot'
 alias mysqldump='mysqldump --host=localhost -uroot -proot'
 alias ncm='ncmpcpp'
-alias of='open .'
+alias of='open -a Path\ Finder.app .'
 alias pl='mpc playlist -f " [%position%) %artist% - %title%]"'
 alias pp='mpc toggle' # (p)lay (p)ause
 alias pub='cd ~/Dropbox/Public/'
@@ -74,6 +74,7 @@ alias rand="openssl rand -hex 8 | pbcopy"
 # https://github.com/paulmillr/dotfiles
 alias rd='rake deploy'
 alias rm='trash'
+alias rssh='rsync -avz -e ssh'
 alias s='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias s3='/Applications/Sublime\ Text\ 3b.app/Contents/SharedSupport/bin/subl'
 alias sa='source ~/dotfiles/aliases'
