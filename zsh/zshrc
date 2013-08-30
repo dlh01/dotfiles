@@ -1,10 +1,6 @@
 echo "Hello, this is zshrc calling. Bass frequencies initiated."
 echo "The latest uptime statistics:" `uptime`
 
-# Source aliases and private files
-source ~/dotfiles/aliases
-source ~/.secrets
-
 # Set up PATH
 # Ensure /usr/local/bin takes precedence over /usr/bin
 # Include brew-installed GNU core utilities bin
@@ -112,7 +108,7 @@ zle -N expand-dot-to-parent-directory-path
 bindkey "." expand-dot-to-parent-directory-path
 
 # Source autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+# [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # Start an HTTP server from a directory, optionally specifying the port
 server() {
@@ -192,6 +188,31 @@ function +vi-git-untracked(){
 # Source virtualenvwrapper
 source /usr/local/share/python/virtualenvwrapper.sh
 
+# Jump
+export MARKPATH=$HOME/.marks
+function jump { 
+  cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
+}
+function mark { 
+  mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
+}
+function unmark { 
+  rm -i "$MARKPATH/$1"
+}
+function marks {
+  \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
+}
+function _completemarks {
+  reply=($(ls $MARKPATH))
+}
+compctl -K _completemarks jump
+compctl -K _completemarks unmark
+alias j='jump'
+
+# Source aliases and private files
+source ~/dotfiles/aliases
+source ~/.secrets
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
@@ -215,6 +236,7 @@ precmd () {
 # http://www.zsh.org/mla/workers/2011/msg00554.html
 # https://github.com/sunaku/home/blob/master/.zsh/config/prompt.zsh
 # https://gist.github.com/brianboyer/1696819
+# http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
