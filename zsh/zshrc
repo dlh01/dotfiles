@@ -233,6 +233,11 @@ function bd {
   cd "$NEWPWD"
 }
 
+# Speed up Git autocompletion
+__git_files () {
+  _wanted files expl 'local files' _files
+}
+
 # Source aliases and private files
 source ~/dotfiles/aliases
 source ~/.secrets
@@ -262,6 +267,7 @@ precmd () {
 # https://gist.github.com/brianboyer/1696819
 # http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html
 # https://github.com/vigneshwaranr/bd
+# https://github.com/skwp/dotfiles/issues/310
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
