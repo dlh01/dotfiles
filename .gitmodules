@@ -112,3 +112,6 @@
 [submodule "zsh/history-substring-search"]
 	path = zsh/history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "vim/bundle/neocomplcache"]
+	path = vim/bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.vim
