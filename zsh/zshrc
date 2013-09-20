@@ -240,6 +240,10 @@ __git_files () {
   _wanted files expl 'local files' _files
 }
 
+# Syntax highlighting with Less
+export LESS="--ignore-case --LONG-PROMPT --QUIET --chop-long-lines -Sm --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --LINE-NUMBERS"
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
+
 # Source aliases and private files
 source ~/dotfiles/aliases
 source ~/.secrets
@@ -270,8 +274,4 @@ precmd () {
 # http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html
 # https://github.com/vigneshwaranr/bd
 # https://github.com/skwp/dotfiles/issues/310
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# http://matt.blissett.me.uk/linux/zsh/zshrc
