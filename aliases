@@ -71,7 +71,6 @@ alias pp='mpc toggle' # (p)lay (p)ause
 alias pub='cd ~/Dropbox/Public/'
 # fix octopress+rake issue: https://github.com/imathis/octopress/issues/117#issuecomment-1899650
 # alias rake='noglob rake' 
-alias rand="openssl rand -hex 8 | pbcopy"
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rd='rake deploy'

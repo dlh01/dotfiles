@@ -248,6 +248,18 @@ export LESSOPEN="| src-hilite-lesspipe.sh %s"
 source ~/dotfiles/aliases
 source ~/.secrets
 
+# Load RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# Get a random string
+function rand {
+  LENGTH=$1
+  if [ "$LENGTH" = "" ]; then
+    LENGTH=8
+  fi
+  openssl rand -hex $LENGTH | pbcopy
+}
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
