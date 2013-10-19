@@ -9,7 +9,7 @@ echo "The latest uptime statistics:" `uptime`
 # Add Composer scripts
 # Add RVM to PATH for scripting
 # Add Heroku
-export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin:$HOME/.composer/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:$PATH:#PATH
+export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin:$HOME/.composer/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:$PATH
 
 # Enable advanced tab-completion
 autoload -Uz compinit
@@ -195,13 +195,13 @@ source /usr/local/share/python/virtualenvwrapper.sh
 
 # Jump
 export MARKPATH=$HOME/.marks
-function jump { 
+function jump {
   cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
 }
-function mark { 
+function mark {
   mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
 }
-function unmark { 
+function unmark {
   rm -i "$MARKPATH/$1"
 }
 function marks {
@@ -241,7 +241,7 @@ __git_files () {
 }
 
 # Syntax highlighting with Less
-export LESS="--ignore-case --LONG-PROMPT --QUIET --chop-long-lines -Sm --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --LINE-NUMBERS"
+export LESS="--ignore-case --LONG-PROMPT --QUIET --chop-long-lines -Sm --RAW-CONTROL-CHARS --quit-if-one-screen --no-init"
 export LESSOPEN="| src-hilite-lesspipe.sh %s"
 
 # Source aliases and private files
