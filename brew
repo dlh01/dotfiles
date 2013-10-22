@@ -71,6 +71,8 @@ brew install mutt --sidebar-patch
 brew install tmux
 brew install tig
 brew install id3v2
+# json processor
+brew install jq
 
 
 # Remove outdated versions from the cellar
