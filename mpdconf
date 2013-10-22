@@ -6,6 +6,7 @@ log_file                "~/.mpd/mpd.log"
 pid_file                "~/.mpd/mpd.pid"
 state_file              "/.mpd/mpd.state"
 auto_update             "no"
+
 # https://wiki.archlinux.org/index.php/Music_Player_Daemon/Troubleshooting#Binding_to_IPV6_before_IPV4
 bind_to_address         "127.0.0.1"
 
