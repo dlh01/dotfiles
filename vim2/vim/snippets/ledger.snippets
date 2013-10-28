@@ -2,14 +2,14 @@ snippet new
 	`strftime("%Y/%m/")`${1:`strftime("%d")`} ${3:! }${2}
 	  ${4:; :Inventory:}
 snippet che
-	  Expenses  ${1:}
-	  Assets:Checking  -$1
+	Expenses  ${1:}
+	Assets:Checking  -$1
 snippet lia
-	  Expenses  ${1:}
-	  Liabilities:${2}  -$1
+	Expenses  ${1:}
+	Liabilities:${2:}  -$1
 snippet bud
-	  [Budget:Expenses:${1}]  ${2}
-	  [Budget:Assets]
+	[Budget:Expenses:${1}]  ${2}
+	[Budget:Assets]$3
 snippet fun
 	  [Funds:Expenses]  ${1}
 	  [Funds:Assets:${2}]
