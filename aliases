@@ -48,6 +48,7 @@ alias gsl='gs | l' # git status | less
 alias guns='git unstage'
 alias gusu='git submodule foreach git pull origin master' # (g)it (u)pdate (su)bmodules
 alias heroku='nocorrect heroku'
+alias irssi='nocorrect irssi'
 alias l='less'
 alias la='ls -aC'
 alias less='less -riX'
