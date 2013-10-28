@@ -32,6 +32,9 @@ Bundle "honza/vim-snippets"
 " Git
 Bundle "tpope/vim-fugitive"
 
+" Markdown
+Bundle "tpope/vim-markdown"
+
 " Ledger
 Bundle "ledger/vim-ledger"
 
