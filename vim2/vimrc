@@ -38,6 +38,11 @@ Bundle "tpope/vim-markdown"
 " Ledger
 Bundle "ledger/vim-ledger"
 
+" PHP Documentor
+Bundle "tobyS/pdv"
+" Vmustache template engine, prerequisite for PDV
+Bundle "tobyS/vmustache"
+
 " Colors
 Bundle "chrisbra/color_highlight"
 Bundle "skwp/vim-colors-solarized"
