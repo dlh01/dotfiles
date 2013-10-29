@@ -195,7 +195,7 @@ source /usr/local/share/python/virtualenvwrapper.sh
 
 # Jump
 export MARKPATH=$HOME/.marks
-function jump {
+function jp {
   cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
 }
 function mark {
@@ -210,9 +210,8 @@ function marks {
 function _completemarks {
   reply=($(ls $MARKPATH))
 }
-compctl -K _completemarks jump
+compctl -K _completemarks jp
 compctl -K _completemarks unmark
-alias j='jump'
 
 # bd
 function bd {
