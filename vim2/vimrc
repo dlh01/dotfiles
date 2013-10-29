@@ -12,11 +12,13 @@ call vundle#rc()
 " Let Vundle manage Vundle (required)
 Bundle 'gmarik/vundle'
 
+" Vim stuff
 Bundle "tpope/vim-surround.git"
 Bundle "Raimondi/delimitMate"
 Bundle "scrooloose/nerdtree.git"
 Bundle "sjbach/lusty"
 Bundle "tomtom/tcomment_vim.git"
+Bundle "Lokaltog/vim-easymotion"
 
 " Frontend
 Bundle "mattn/emmet-vim"
