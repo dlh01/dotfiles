@@ -48,8 +48,8 @@ Bundle "tobyS/vmustache"
 
 " Colors
 Bundle "chrisbra/color_highlight"
-Bundle "skwp/vim-colors-solarized"
 Bundle "bling/vim-airline"
+Bundle "altercation/vim-colors-solarized"
 
 filetype plugin indent on
 
