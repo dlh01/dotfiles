@@ -19,6 +19,7 @@ Bundle "scrooloose/nerdtree.git"
 Bundle "sjbach/lusty"
 Bundle "tomtom/tcomment_vim.git"
 Bundle "Lokaltog/vim-easymotion"
+Bundle "terryma/vim-multiple-cursors"
 
 " Frontend
 Bundle "mattn/emmet-vim"
