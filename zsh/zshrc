@@ -34,7 +34,7 @@ setopt prompt_subst
 export PROMPT='
 %F{yellow}%n%F{white}@%F{magenta}%m%F{white}: %F{green}%~
 $ %f'
-export RPROMPT='%F{green}${vcs_info_msg_0_}($(~/.rvm/bin/rvm-prompt i v))%f'
+export RPROMPT='%F{green}${vcs_info_msg_0_}%f'
 
 # Enable autocd
 setopt autocd
