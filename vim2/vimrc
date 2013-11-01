@@ -51,6 +51,9 @@ Bundle "chrisbra/color_highlight"
 Bundle "bling/vim-airline"
 Bundle "altercation/vim-colors-solarized"
 
+" EditorConfig
+Bundle "editorconfig/editorconfig-vim"
+
 filetype plugin indent on
 
 
