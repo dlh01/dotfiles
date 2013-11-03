@@ -55,6 +55,7 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "editorconfig/editorconfig-vim"
 
 filetype plugin indent on
+syntax on
 
 
 
