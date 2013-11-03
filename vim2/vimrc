@@ -277,6 +277,9 @@ imap <silent> <D-K> _
 imap <silent> <D-d> -
 imap <silent> <D-k> _
 
+" Hashrockets
+imap <c-k> ->
+imap <c-l> <space>=><space>
 
 
 " }}}
