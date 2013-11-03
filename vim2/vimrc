@@ -93,8 +93,8 @@ set hidden
 " Change to the current working directory when moving among buffers
 set autochdir
 
-" Show invisibles: tabs, trailing spaces, EOL
-set listchars=tab:▸\ ,eol:¬,trail:-
+" Show invisibles: tabs, trailing spaces
+set list listchars=tab:\ \ ,trail:·
 
 " Use underscore as a delimiter for word movement
 " http://lglinux.blogspot.com/2008/04/vim-word-movement-with-underscore.html
@@ -109,6 +109,13 @@ set nowb
 silent !mkdir ~/temp/.vim/backups > /dev/null 2>&1
 set undodir=~/temp/.vim/backups
 set undofile
+
+" Typography: Font and line spacing
+set guifont=Inconsolata:h16,Monaco:h17
+set linespace=2
+
+" Show a column at column 80
+set colorcolumn=80
 
 
 
