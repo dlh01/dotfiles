@@ -1,17 +1,26 @@
 snippet new
-	`strftime("%Y/%m/")`${1:`strftime("%d")`} ${3:! }${2}
-	  ${4:; :Inventory:}
+`date +"%Y/%m/"`${1:`date +"%d"`} ${3:!} ${2}
+	${4:; :Inventory:}
+endsnippet
+
 snippet che
-	Expenses  ${1:}
-	Assets:Checking  -$1
-	${2:}
+Expenses  ${1:}
+Assets:Checking  -$1
+${2:}
+endsnippet
+
 snippet lia
-	Expenses  ${1:}
-	Liabilities:${2:}  -$1
-	${3:}
+Expenses  ${1:}
+Liabilities:${2:}
+${3:}
+endsnippet
+
 snippet bud
-	[Budget:Expenses:${1}]  ${2}
-	[Budget:Assets]$3
+[Budget:Expenses:${1}]  ${2}
+[Budget:Assets]$3
+endsnippet
+
 snippet fun
-	  [Funds:Expenses]  ${1}
-	  [Funds:Assets:${2}]
+[Funds:Expenses]  ${1}
+[Funds:Assets:${2}]
+endsnippet
