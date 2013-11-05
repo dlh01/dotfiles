@@ -6,3 +6,6 @@ nmap <D-N> :NERDTreeToggle<cr>
 
 " Open NERDTree in the current directory
 map <c-\> :NERDTree %<cr>
+
+" Close NERDTree after opening a file
+let NERDTreeQuitOnOpen=1
