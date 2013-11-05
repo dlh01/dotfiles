@@ -2,4 +2,4 @@
 let g:pdv_template_dir= $HOME . '/.vim/bundle/pdv/templates'
 
 " Generate a docblock with C-p
-nnoremap <silent> <C-p> :call pdv#DocumentCurrentLine()<CR>
+nnoremap <silent> <C-p> :call pdv#DocumentWithSnip()<CR>
