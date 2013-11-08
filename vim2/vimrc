@@ -113,7 +113,11 @@ set linespace=2
 
 " Show a column at column 80
 set colorcolumn=80
+" In the Terminal, use a dark line for the colorcolumn
+hi ColorColumn ctermbg=235
 
+" Force encoding to be UTF-8
+set encoding=utf-8
 
 
 " }}}
