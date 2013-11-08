@@ -11,16 +11,16 @@ endsnippet
 
 snippet lia
 Expenses  ${1:}
-Liabilities:${2:}
+Liabilities:${2:}  -$1
 ${3:}
 endsnippet
 
 snippet bud
 [Budget:Expenses:${1}]  ${2}
-[Budget:Assets]$3
+[Budget:Assets]  -$2$3
 endsnippet
 
 snippet fun
 [Funds:Expenses]  ${1}
-[Funds:Assets:${2}]
+[Funds:Assets:${2}]  -$1
 endsnippet
