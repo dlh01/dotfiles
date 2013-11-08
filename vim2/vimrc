@@ -43,6 +43,10 @@ Bundle "tobyS/pdv"
 " Vmustache template engine, prerequisite for PDV
 Bundle "tobyS/vmustache"
 
+" Tag browsing
+Bundle "majutsushi/tagbar"
+Bundle "vim-scripts/AutoTag"
+
 " Colors
 Bundle "chrisbra/color_highlight"
 Bundle "bling/vim-airline"
