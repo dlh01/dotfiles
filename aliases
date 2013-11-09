@@ -87,4 +87,6 @@ alias trel='tree | less'
 alias utime='date -r'
 alias uzh='unzip -d ./' # unzip to current directory -- (u)n(z)ip (h)ere
 alias v='vim'
+alias vbi='vim +BundleInstall'
+alias vbu='vim +BundleUpdate'
 alias yo='nocorrect yo'
