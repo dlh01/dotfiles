@@ -9,3 +9,6 @@ map <c-\> :NERDTree %<cr>
 
 " Close NERDTree after opening a file
 let NERDTreeQuitOnOpen=1
+
+" Show Bookmarks when opening NERDTree
+let NERDTreeShowBookmarks=1
