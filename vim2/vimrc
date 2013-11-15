@@ -234,6 +234,10 @@ imap <leader>w <C-o>:w<cr>
 map <leader>x :x<cr>
 imap <leader>x <C-o>:x<cr>
 
+" Quit
+map <leader>q :x<cr>
+imap <leader>q <C-o>:q<cr>
+
 " Edit new file
 map <leader>n :enew<cr>
 
