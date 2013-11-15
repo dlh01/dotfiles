@@ -54,6 +54,7 @@ Bundle "vim-scripts/AutoTag"
 Bundle "chrisbra/color_highlight"
 Bundle "bling/vim-airline"
 Bundle "altercation/vim-colors-solarized"
+Bundle "tomasr/molokai"
 
 " EditorConfig
 Bundle "editorconfig/editorconfig-vim"
