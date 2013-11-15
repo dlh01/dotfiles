@@ -121,11 +121,15 @@ set linespace=2
 
 " Show a column at column 80
 set colorcolumn=80
+
+" Use Solarized
+colorscheme solarized
+
 " In the Terminal, use a dark line for the colorcolumn and folds
 " `234` is a hex term defined in Solarized:
 " http://ethanschoonover.com/solarized/vim-colors-solarized
-hi ColorColumn ctermbg=234
-hi Folded ctermbg=234
+" hi ColorColumn ctermbg=234
+" hi Folded ctermbg=234
 
 " Force encoding to be UTF-8
 set encoding=utf-8
