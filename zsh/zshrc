@@ -10,7 +10,8 @@ echo "The latest uptime statistics:" `uptime`
 # Add Composer scripts
 # Add RVM to PATH for scripting
 # Add Heroku
-export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin:$HOME/.wp-cli/bin:$HOME/.composer/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:$PATH
+# Add brew-install PHP bin
+export PATH=/usr/local/share/python:/usr/local/share/python3:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin:$(brew --prefix)/share/npm/bin:/Applications/MAMP/Library/bin:$HOME/.wp-cli/bin:$HOME/.composer/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:$(brew --prefix)/Cellar/php54/5.4.11/bin/:$PATH
 
 # Enable advanced tab-completion
 autoload -Uz compinit
