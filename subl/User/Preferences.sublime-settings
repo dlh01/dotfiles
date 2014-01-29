@@ -5,18 +5,18 @@
 	"font_size": 16.0,
 	"ignored_packages":
 	[
+		"AdvancedNewFile"
 	],
-	"jsdocs_align_tags": "no",
+	"jsdocs_align_tags": "yes",
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
 	"rulers":
 	[
-		70
+		80
 	],
 	"scroll_past_end": true,
 	"show_full_path": true,
-	"soda_classic_tabs": true,
-	"tab_size": 2,
+	"soda_folder_icons": true,
 	"theme": "Soda Light.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true
