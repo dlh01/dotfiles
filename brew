@@ -67,12 +67,13 @@ brew install markdown
 # http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/
 brew install python --with-brewed-openssl
 brew install python3 --with-brewed-openssl
-brew install mutt --sidebar-patch
 brew install tmux
 brew install tig
 brew install id3v2
 # json processor
 brew install jq
+brew install htop
+brew install s3cmd
 
 
 # Remove outdated versions from the cellar
