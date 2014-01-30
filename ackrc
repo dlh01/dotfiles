@@ -6,6 +6,3 @@
 
 # Use "less -r" as my pager
 --pager=less -r
-
-# Always search files of all types (such as hidden files)
---all
