@@ -182,7 +182,7 @@ export WP_CLI_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
 export WP_TESTS_DIR=/Users/dlh01/localhost/wptests/tests/phpunit
 
 # Source history-substring-search
-source ~/dotfiles/zsh/history-substring-search/zsh-history-substring-search.zsh
+source ~/dotfiles/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Show untracked files in `vcs_info`
 function +vi-git-untracked(){
