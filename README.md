@@ -21,7 +21,7 @@ Symlinking should happen from `~`
     1. `brew install source-highlight`
 1. Setting up Git
     1. Symlink global ignores: `ln -s dotfiles/git/gitignore .gitignore`
-    1. Symlink config file, unless the environment has its own configuration: `ln -s dotfiles/git/gitconfig .gitconfig`
+    1. Copy config file, unless the environment has its own configuration: `cp dotfiles/git/gitconfig .gitconfig`. Then set your user name and email
 
 
 # Vim
