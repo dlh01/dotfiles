@@ -22,6 +22,37 @@ Symlinking should happen from `~`
 1. Setting up Git
     1. Symlink global ignores: `ln -s dotfiles/git/gitignore .gitignore`
     1. Copy config file, unless the environment has its own configuration: `cp dotfiles/git/gitconfig .gitconfig`. Then set your user name and email
+1. Setting up OS X
+    1. Consider updating and running the `.osx` script
+    1. Download and install applications
+        1. VirtualBox
+        1. Vagrant
+        1. Chrome
+            1. LastPass extension
+            1. Vimium extension
+        1. Chrome Canary
+        1. Sublime Text
+        1. iTerm
+        1. Dropbox
+        1. nvALT
+        1. Firefox
+        1. Opera
+        1. Cyberduck
+        1. Flux
+        1. Alfred
+        1. PCKeyboardHack (might need restart)
+        1. Bartender
+    1. Download and install apps from the App Store
+        1. Xcode
+        1. Skitch
+        1. Dash
+        1. Divvy
+        1. aText
+    1. Other
+        1. Quicklook text file previews: <https://coderwall.com/p/dlithw>
+1. Setting up `dnsmasq`
+    * <http://www.echoditto.com/blog/never-touch-your-local-etchosts-file-os-x-again>
+    * <https://work.alley.ws/projects/staff/wiki/Using_dnsmasq_to_automate_local_domain_setup_for_Vagrant>
 
 
 # Vim
@@ -36,6 +67,8 @@ Symlinking should happen from `~`
 
 * Separate the `brew` commands into multiple files, so not all machines get
   `ledger`, `mpd`, etc.
+* Use a `Brewfile`
+* Rewrite the installation steps to go in the proper order of operations (e.g., Xcode first)
 
 # Credits
 
