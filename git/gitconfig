@@ -1,9 +1,10 @@
 [alias]
-	co = checkout
-	st = status
 	br = branch
 	ci = commit
+	co = checkout
+	di = diff
 	nb = checkout -b
+	st = status
 [color]
 	status = auto
 	branch = auto
@@ -17,3 +18,5 @@
 	excludesfile = ~/.gitignore
 [fetch]
 	recurseSubmodules = true
+[include]
+	path = .gitconfig.local
