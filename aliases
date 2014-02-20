@@ -5,6 +5,7 @@ alias .....='cd ../../../../'
 alias bal='ledger bal -f'
 alias balmonth='ledger -b "this month" balance -f'
 alias c='cd'
+alias cd-='cd -'
 alias cdb='cd -'
 alias cpr='rsync -a --progress'
 alias crashplan-check='ps auxww | grep -i CrashPlanService'
@@ -19,6 +20,7 @@ alias du='du -h -d 2'
 alias ea='vim ~/dotfiles/aliases' # (e)dit (a)liases
 alias ee='vim ~/.secrets' # (e)dit (se)crets
 alias eh='sudo vim /etc/hosts'
+alias ess='cd $SUBLIME_SNIPPETS_DIR';
 alias ev='vim ~/.vimrc'
 alias ez='vim ~/dotfiles/zsh/zshrc' # (e)dit (z)shrc
 alias ga='git add -A'
@@ -32,7 +34,7 @@ alias gds='git diff --staged'
 alias getip='ping -c 1 '
 alias gff='git flow feature finish'
 alias gfs='git flow feature start'
-alias gl='git l'
+alias gl='git log'
 alias gm='git merge'
 alias gnb='git nb' # new branch aka checkout -b
 alias gol='cd ~/localhost/gollum'
@@ -70,7 +72,7 @@ alias pl='mpc status && mpc playlist -f "[%position%])\t%artist% - %title%]"'
 alias pp='mpc toggle' # (p)lay (p)ause
 alias pub='cd ~/Dropbox/Public/'
 # fix octopress+rake issue: https://github.com/imathis/octopress/issues/117#issuecomment-1899650
-# alias rake='noglob rake' 
+# alias rake='noglob rake'
 # requires osx-trash: sudo gem install osx-trash
 # https://github.com/paulmillr/dotfiles
 alias rd='rake deploy'
@@ -82,6 +84,7 @@ alias sbu='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 alias sa='source ~/dotfiles/aliases'
 alias scp='scp -l 2000'
 alias sites='sudo mvim /Applications/MAMP/conf/apache/sites'
+alias tat='tmux attach -t'
 alias tmux='nocorrect tmux'
 alias trel='tree | less'
 # convert unix time: http://stackoverflow.com/a/14107637
