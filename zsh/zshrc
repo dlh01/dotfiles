@@ -245,9 +245,16 @@ __git_files () {
 export LESS="--ignore-case --LONG-PROMPT --QUIET --chop-long-lines -Sm --RAW-CONTROL-CHARS --quit-if-one-screen --no-init"
 export LESSOPEN="| src-hilite-lesspipe.sh %s"
 
+# Open the current repository in GitHub
+function gh {
+  this_repo=`git config --get remote.origin.url 2>&1`
+  open "https://github.com/`expr "$this_repo" : '.*:\(.*\).git'`/"
+}
+
 # Source aliases and private files
 source ~/dotfiles/aliases
 source ~/.secrets
+source ~/.aliases.local
 
 # Load RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
@@ -260,6 +267,9 @@ function rand {
   fi
   openssl rand -hex $LENGTH | pbcopy
 }
+
+# Sublime Text snippets dir
+export SUBLIME_SNIPPETS_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 
 # Do just before presenting the prompt
 precmd () {
