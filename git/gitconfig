@@ -1,5 +1,6 @@
 [alias]
 	br = branch
+	changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
 	ci = commit
 	co = checkout
 	di = diff
@@ -20,3 +21,5 @@
 	recurseSubmodules = true
 [include]
 	path = .gitconfig.local
+[format]
+	pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
