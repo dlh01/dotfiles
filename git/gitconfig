@@ -6,6 +6,7 @@
 	di = diff
 	nb = checkout -b
 	st = status
+	unstage = reset HEAD
 [color]
 	status = auto
 	branch = auto
