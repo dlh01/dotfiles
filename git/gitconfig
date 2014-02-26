@@ -6,6 +6,7 @@
 	di = diff
 	nb = checkout -b
 	st = status
+	unstage = reset HEAD
 [color]
 	status = auto
 	branch = auto
@@ -21,5 +22,3 @@
 	recurseSubmodules = true
 [include]
 	path = .gitconfig.local
-[format]
-	pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
