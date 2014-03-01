@@ -271,6 +271,9 @@ function rand {
 # Sublime Text snippets dir
 export SUBLIME_SNIPPETS_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 
+# Exclude /etc/hosts entries from tab completion
+zstyle ':completion:*' hosts off
+
 # Do just before presenting the prompt
 precmd () {
   vcs_info
@@ -298,3 +301,4 @@ precmd () {
 # https://github.com/vigneshwaranr/bd
 # https://github.com/skwp/dotfiles/issues/310
 # http://matt.blissett.me.uk/linux/zsh/zshrc
+# http://unix.stackexchange.com/a/14157
