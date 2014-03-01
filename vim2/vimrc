@@ -25,11 +25,6 @@ Bundle "tpope/vim-sleuth"
 " Syntax checking
 Bundle "scrooloose/syntastic"
 
-" Frontend
-Bundle "mattn/emmet-vim"
-Bundle "itspriddle/vim-jquery"
-Bundle "othree/html5.vim"
-
 " Snippets
 Bundle "SirVer/ultisnips"
 
@@ -42,20 +37,10 @@ Bundle "tpope/vim-markdown"
 " Ledger
 Bundle "ledger/vim-ledger"
 
-" PHP Documentor
-Bundle "tobyS/pdv"
-" Vmustache template engine, prerequisite for PDV
-Bundle "tobyS/vmustache"
-
-" Tag browsing
-Bundle "majutsushi/tagbar"
-Bundle "vim-scripts/AutoTag"
-
 " Colors
 Bundle "chrisbra/color_highlight"
 Bundle "bling/vim-airline"
 Bundle "altercation/vim-colors-solarized"
-Bundle "tomasr/molokai"
 
 " EditorConfig
 Bundle "editorconfig/editorconfig-vim"
